@@ -152,8 +152,8 @@ func TestSQLOpen(t *testing.T) {
 	tests := []struct {
 		driverName string
 	}{
-		{driverName: "pgx"},
-		{driverName: "pgx/v5"},
+		{driverName: "yb-pgx"},
+		{driverName: "yb-pgx/v5"},
 	}
 
 	for _, tt := range tests {
@@ -1162,7 +1162,7 @@ func TestRegisterConnConfig(t *testing.T) {
 	defer stdlib.UnregisterConnConfig(connStr)
 	require.Equal(t, "registeredConnConfig1", connStr)
 
-	db, err := sql.Open("pgx", connStr)
+	db, err := sql.Open("yb-pgx", connStr)
 	require.NoError(t, err)
 	defer closeDB(t, db)
 
@@ -1312,13 +1312,13 @@ func TestResetSessionHookCalled(t *testing.T) {
 }
 
 func TestCheckIdleConn(t *testing.T) {
-	controllerConn, err := sql.Open("pgx", os.Getenv("PGX_TEST_DATABASE"))
+	controllerConn, err := sql.Open("yb-pgx", os.Getenv("PGX_TEST_DATABASE"))
 	require.NoError(t, err)
 	defer closeDB(t, controllerConn)
 
 	skipCockroachDB(t, controllerConn, "Server does not support pg_terminate_backend() (https://github.com/cockroachdb/cockroach/issues/35897)")
 
-	db, err := sql.Open("pgx", os.Getenv("PGX_TEST_DATABASE"))
+	db, err := sql.Open("yb-pgx", os.Getenv("PGX_TEST_DATABASE"))
 	require.NoError(t, err)
 	defer closeDB(t, db)
 

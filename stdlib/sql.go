@@ -2,14 +2,14 @@
 //
 // A database/sql connection can be established through sql.Open.
 //
-//	db, err := sql.Open("pgx", "postgres://pgx_md5:secret@localhost:5433/pgx_test?sslmode=disable")
+//	db, err := sql.Open("yb-pgx", "postgres://pgx_md5:secret@localhost:5433/pgx_test?sslmode=disable")
 //	if err != nil {
 //	  return err
 //	}
 //
 // Or from a DSN string.
 //
-//	db, err := sql.Open("pgx", "user=postgres password=secret host=localhost port=5433 database=pgx_test sslmode=disable")
+//	db, err := sql.Open("yb-pgx", "user=postgres password=secret host=localhost port=5433 database=pgx_test sslmode=disable")
 //	if err != nil {
 //	  return err
 //	}
@@ -30,7 +30,7 @@
 //	connConfig, _ := pgx.ParseConfig(os.Getenv("DATABASE_URL"))
 //	connConfig.Tracer = &tracelog.TraceLog{Logger: myLogger, LogLevel: tracelog.LogLevelInfo}
 //	connStr := stdlib.RegisterConnConfig(connConfig)
-//	db, _ := sql.Open("pgx", connStr)
+//	db, _ := sql.Open("yb-pgx", connStr)
 //
 // pgx uses standard PostgreSQL positional parameters in queries. e.g. $1, $2. It does not support named parameters.
 //
@@ -98,10 +98,10 @@ func init() {
 
 	// if pgx driver was already registered by different pgx major version then we
 	// skip registration under the default name.
-	if !contains(sql.Drivers(), "pgx") {
-		sql.Register("pgx", pgxDriver)
+	if !contains(sql.Drivers(), "yb-pgx") {
+		sql.Register("yb-pgx", pgxDriver)
 	}
-	sql.Register("pgx/v5", pgxDriver)
+	sql.Register("yb-pgx/v5", pgxDriver)
 
 	databaseSQLResultFormats = pgx.QueryResultFormatsByOID{
 		pgtype.BoolOID:        1,

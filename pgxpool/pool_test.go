@@ -247,7 +247,7 @@ func TestPoolBeforeConnect(t *testing.T) {
 	require.NoError(t, err)
 
 	config.BeforeConnect = func(ctx context.Context, cfg *pgx.ConnConfig) error {
-		cfg.Config.RuntimeParams["application_name"] = "pgx"
+		cfg.Config.RuntimeParams["application_name"] = "yb-pgx"
 		return nil
 	}
 
@@ -258,7 +258,7 @@ func TestPoolBeforeConnect(t *testing.T) {
 	var str string
 	err = db.QueryRow(ctx, "SHOW application_name").Scan(&str)
 	require.NoError(t, err)
-	assert.EqualValues(t, "pgx", str)
+	assert.EqualValues(t, "yb-pgx", str)
 }
 
 func TestPoolAfterConnect(t *testing.T) {

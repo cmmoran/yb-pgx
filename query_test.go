@@ -1251,7 +1251,7 @@ func TestConnQueryDatabaseSQLNullX(t *testing.T) {
 		boolValid:    sql.NullBool{Bool: true, Valid: true},
 		int64Valid:   sql.NullInt64{Int64: 123, Valid: true},
 		float64Valid: sql.NullFloat64{Float64: 3.14, Valid: true},
-		stringValid:  sql.NullString{String: "pgx", Valid: true},
+		stringValid:  sql.NullString{String: "yb-pgx", Valid: true},
 	}
 
 	var actual row
