@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
 )
 
 const pgTimestampFormat = "2006-01-02 15:04:05.999999999"

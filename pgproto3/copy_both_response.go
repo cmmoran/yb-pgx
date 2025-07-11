@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/yugabyte/pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
 )
 
 type CopyBothResponse struct {

@@ -20,12 +20,12 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/internal/pgio"
-	"github.com/yugabyte/pgx/v5/internal/pgmock"
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgproto3"
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgmock"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 const pgbouncerConnStringEnvVar = "PGX_TEST_PGBOUNCER_CONN_STRING"

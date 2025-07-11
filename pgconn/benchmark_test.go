@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5/pgconn"
 )
 
 func BenchmarkConnect(b *testing.B) {

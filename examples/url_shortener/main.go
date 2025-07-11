@@ -7,8 +7,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgxpool"
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgxpool"
 )
 
 var db *pgxpool.Pool

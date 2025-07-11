@@ -1,4 +1,4 @@
-module github.com/yugabyte/pgx/v5
+module github.com/cmmoran/yb-pgx/v5
 
 go 1.19
 

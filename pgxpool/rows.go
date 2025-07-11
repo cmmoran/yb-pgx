@@ -1,8 +1,8 @@
 package pgxpool
 
 import (
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 type errRows struct {

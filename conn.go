@@ -10,11 +10,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/internal/anynil"
-	"github.com/yugabyte/pgx/v5/internal/sanitize"
-	"github.com/yugabyte/pgx/v5/internal/stmtcache"
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/internal/anynil"
+	"github.com/cmmoran/yb-pgx/v5/internal/sanitize"
+	"github.com/cmmoran/yb-pgx/v5/internal/stmtcache"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // ConnConfig contains all the options used to establish a connection. It must be created by ParseConfig and

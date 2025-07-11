@@ -15,14 +15,14 @@ import (
 	"testing"
 	"time"
 
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgxpool"
+	"github.com/cmmoran/yb-pgx/v5/stdlib"
+	"github.com/cmmoran/yb-pgx/v5/tracelog"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgtype"
-	"github.com/yugabyte/pgx/v5/pgxpool"
-	"github.com/yugabyte/pgx/v5/stdlib"
-	"github.com/yugabyte/pgx/v5/tracelog"
 )
 
 func openDB(t testing.TB) *sql.DB {

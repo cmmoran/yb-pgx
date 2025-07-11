@@ -4,7 +4,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/yugabyte/pgx/v5/pgproto3"
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
 )
 
 // NewGSSFunc creates a GSS authentication provider, for use with

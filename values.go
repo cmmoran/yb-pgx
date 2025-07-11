@@ -3,9 +3,9 @@ package pgx
 import (
 	"errors"
 
-	"github.com/yugabyte/pgx/v5/pgtype"
-	"github.com/yugabyte/pgx/v5/internal/anynil"
-	"github.com/yugabyte/pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/internal/anynil"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // PostgreSQL format codes

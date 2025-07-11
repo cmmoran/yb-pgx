@@ -109,7 +109,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yugabyte/pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5"
 )
 
 func main() {

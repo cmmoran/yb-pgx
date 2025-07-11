@@ -1,7 +1,7 @@
 package zeronull
 
 import (
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // Register registers the zeronull types so they can be used in query exec modes that do not know the server OIDs.

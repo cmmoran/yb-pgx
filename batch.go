@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // QueuedQuery is a query that has been queued for execution via a Batch.

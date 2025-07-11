@@ -5,7 +5,7 @@ import (
 	"io"
 	"sync"
 
-	"github.com/yugabyte/pgx/v5/internal/iobufpool"
+	"github.com/cmmoran/yb-pgx/v5/internal/iobufpool"
 )
 
 const (

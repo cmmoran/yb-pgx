@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 type Int2 int16

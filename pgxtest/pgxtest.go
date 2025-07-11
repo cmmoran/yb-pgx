@@ -9,7 +9,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/yugabyte/pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5"
 )
 
 var AllQueryExecModes = []pgx.QueryExecMode{

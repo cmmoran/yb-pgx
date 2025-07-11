@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/cmmoran/yb-pgx/v5/pgconn/internal/bgreader"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5/pgconn/internal/bgreader"
 )
 
 func TestBGReaderReadWhenStopped(t *testing.T) {

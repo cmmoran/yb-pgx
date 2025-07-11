@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // Rows is the result set returned from *Conn.Query. Rows must be closed before

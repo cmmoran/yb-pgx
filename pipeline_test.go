@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgconn"
 )
 
 func TestPipelineWithoutPreparedOrDescribedStatements(t *testing.T) {

@@ -3,7 +3,7 @@ package pgx
 import (
 	"context"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // QueryTracer traces Query, QueryRow, and Exec.

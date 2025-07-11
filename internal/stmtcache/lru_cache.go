@@ -3,7 +3,7 @@ package stmtcache
 import (
 	"container/list"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // LRUCache implements Cache with a Least Recently Used (LRU) cache.

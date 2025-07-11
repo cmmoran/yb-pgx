@@ -5,12 +5,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/pgxpool"
+	"github.com/cmmoran/yb-pgx/v5/pgxpool"
 
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgconn"
 )
 
 // Conn.Release is an asynchronous process that returns immediately. There is no signal when the actual work is

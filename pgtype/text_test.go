@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
+	pgx "github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgxtest"
 	"github.com/stretchr/testify/require"
-	pgx "github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgtype"
-	"github.com/yugabyte/pgx/v5/pgxtest"
 )
 
 type someFmtStringer struct{}

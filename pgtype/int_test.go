@@ -6,8 +6,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/yugabyte/pgx/v5/pgtype"
-	"github.com/yugabyte/pgx/v5/pgxtest"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgxtest"
 )
 
 func TestInt2Codec(t *testing.T) {

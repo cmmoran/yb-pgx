@@ -22,7 +22,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/yugabyte/pgx/v5/pgproto3"
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/text/secure/precis"
 )

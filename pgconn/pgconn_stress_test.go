@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 
 	"github.com/stretchr/testify/require"
 )

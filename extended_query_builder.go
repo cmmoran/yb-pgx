@@ -4,9 +4,9 @@ import (
 	"database/sql/driver"
 	"fmt"
 
-	"github.com/yugabyte/pgx/v5/internal/anynil"
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/internal/anynil"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // ExtendedQueryBuilder is used to choose the parameter formats, to format the parameters and to choose the result

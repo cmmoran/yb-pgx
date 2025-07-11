@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
 )
 
 // Point represents a point that may be null.

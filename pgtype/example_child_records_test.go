@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/yugabyte/pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5"
 )
 
 type Player struct {

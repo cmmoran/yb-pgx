@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/yugabyte/pgx/v5/internal/pgio"
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // CopyFromRows returns a CopyFromSource interface over the provided rows slice

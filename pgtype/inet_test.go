@@ -6,7 +6,7 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/yugabyte/pgx/v5/pgxtest"
+	"github.com/cmmoran/yb-pgx/v5/pgxtest"
 )
 
 func isExpectedEqIPNet(a any) func(any) bool {

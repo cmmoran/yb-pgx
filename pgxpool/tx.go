@@ -3,8 +3,8 @@ package pgxpool
 import (
 	"context"
 
-	"github.com/yugabyte/pgx/v5"
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // Tx represents a database transaction acquired from a Pool.

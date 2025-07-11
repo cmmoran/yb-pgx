@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/pgtype"
-	"github.com/yugabyte/pgx/v5/pgxtest"
+	"github.com/cmmoran/yb-pgx/v5/pgtype"
+	"github.com/cmmoran/yb-pgx/v5/pgxtest"
 )
 
 func TestTimeCodec(t *testing.T) {

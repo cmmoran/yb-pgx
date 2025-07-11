@@ -7,8 +7,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
-	"github.com/yugabyte/pgx/v5/pgproto3"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
 	"github.com/stretchr/testify/require"
 )
 

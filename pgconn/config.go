@@ -17,9 +17,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
 	"github.com/jackc/pgpassfile"
 	"github.com/jackc/pgservicefile"
-	"github.com/yugabyte/pgx/v5/pgproto3"
 )
 
 type AfterConnectFunc func(ctx context.Context, pgconn *PgConn) error

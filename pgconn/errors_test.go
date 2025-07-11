@@ -3,8 +3,8 @@ package pgconn_test
 import (
 	"testing"
 
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 	"github.com/stretchr/testify/assert"
-	"github.com/yugabyte/pgx/v5/pgconn"
 )
 
 func TestConfigError(t *testing.T) {

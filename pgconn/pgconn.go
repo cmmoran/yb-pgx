@@ -16,11 +16,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yugabyte/pgx/v5/internal/iobufpool"
-	"github.com/yugabyte/pgx/v5/internal/pgio"
-	"github.com/yugabyte/pgx/v5/pgconn/internal/bgreader"
-	"github.com/yugabyte/pgx/v5/pgconn/internal/ctxwatch"
-	"github.com/yugabyte/pgx/v5/pgproto3"
+	"github.com/cmmoran/yb-pgx/v5/internal/iobufpool"
+	"github.com/cmmoran/yb-pgx/v5/internal/pgio"
+	"github.com/cmmoran/yb-pgx/v5/pgconn/internal/bgreader"
+	"github.com/cmmoran/yb-pgx/v5/pgconn/internal/ctxwatch"
+	"github.com/cmmoran/yb-pgx/v5/pgproto3"
 )
 
 const (

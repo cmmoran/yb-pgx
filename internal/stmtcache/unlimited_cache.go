@@ -3,7 +3,7 @@ package stmtcache
 import (
 	"math"
 
-	"github.com/yugabyte/pgx/v5/pgconn"
+	"github.com/cmmoran/yb-pgx/v5/pgconn"
 )
 
 // UnlimitedCache implements Cache with no capacity limit.

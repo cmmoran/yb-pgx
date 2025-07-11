@@ -5,8 +5,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/yugabyte/pgx/v5/pgtype/zeronull"
-	"github.com/yugabyte/pgx/v5/pgxtest"
+	"github.com/cmmoran/yb-pgx/v5/pgtype/zeronull"
+	"github.com/cmmoran/yb-pgx/v5/pgxtest"
 )
 
 func TestInt2Transcode(t *testing.T) {

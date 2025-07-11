@@ -6,8 +6,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/cmmoran/yb-pgx/v5/pgxpool"
 	"github.com/stretchr/testify/require"
-	"github.com/yugabyte/pgx/v5/pgxpool"
 )
 
 func TestConnExec(t *testing.T) {
